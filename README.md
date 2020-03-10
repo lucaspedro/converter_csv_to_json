@@ -2,7 +2,7 @@
 
 This is an implementation works with a structure in CSV file, which represents a nested JSON, with parents and children. The algorithm presented here converts this format from CSV to specific JSON.
 A JSON data structure can be very useful for representing nested data types, as in the case of the project: https://github.com/lucaspedro/JSON-Parameterizable-Side-Bar.
-However, a CSV data structure is much more easily filled out by a lay user, making the interest in such an implementation greater.
+However, a CSV data structure is much more easily filled out by a lay user, making the interest in such an implementation greater. In order to create a more friendly environment for the implementation of the SideBar parameterized by JSON, this CSV converter code was made.
 
 # Configuration
 
@@ -94,4 +94,8 @@ level,title,icon,children,father
 ```
 When a node has no children or parent, None should be used to indicate the void. The order of nodes does not matter as long as it respects the hierarchy of levels and also the records of parents and children.
 
+# Application
 
+An application of this code can be viewed in a video below, where it was used to create a more friendly environment in the production of parameterizable sidebar menus by JSON. The video shows an edition of a CSV that is converted to JSON and finally used to generate the final layout of a sidebar.
+
+https://youtu.be/123f_8WU9YU
