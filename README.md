@@ -86,6 +86,8 @@ level,title,icon,children,father
 0,A4,list,None,None
 3,E1,view_quilt,F1,D3
 ```
+When a node has no children or parent, None should be used to indicate the void.
+
 # Structure
 
 The chosen CSV structure works with levels, parents and children to make the correct linking of nodes. The tree shown below exemplifies the linking of nodes in a JSON file. The level variable indicates the position of each group of nodes that have the same height, this is a common concept of tree structure in programming. It can also be seen in the figure, that the node "D" is a child of "A" and that the node "D" has children "H", "I" and "J". Through this information it is possible to map a nested JSON to CSV and vice versa.
