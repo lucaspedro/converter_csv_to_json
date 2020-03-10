@@ -65,6 +65,12 @@ file_csv = 'input_csv.csv'
 ####################################################################
 ```
 
+# Structure
+
+The chosen CSV structure works with levels, parents and children to make the correct linking of nodes. The tree shown below exemplifies the linking of nodes in a JSON file. The level variable indicates the position of each group of nodes that have the same height, this is a common concept of tree structure in programming. It can also be seen in the figure, that the node "D" is a child of "A" and that the node "D" has children "H", "I" and "J". Through this information it is possible to map a nested JSON to CSV and vice versa.
+
+![structure](structure.png)
+
 The CSV file must follow the following pattern defined to work correctly:
 
 ```
@@ -86,10 +92,6 @@ level,title,icon,children,father
 0,A4,list,None,None
 3,E1,view_quilt,F1,D3
 ```
-When a node has no children or parent, None should be used to indicate the void.
+When a node has no children or parent, None should be used to indicate the void. The order of nodes does not matter as long as it respects the hierarchy of levels and also the records of parents and children.
 
-# Structure
 
-The chosen CSV structure works with levels, parents and children to make the correct linking of nodes. The tree shown below exemplifies the linking of nodes in a JSON file. The level variable indicates the position of each group of nodes that have the same height, this is a common concept of tree structure in programming. It can also be seen in the figure, that the node "D" is a child of "A" and that the node "D" has children "H", "I" and "J". Through this information it is possible to map a nested JSON to CSV and vice versa.
-
-![structure](structure.png)
