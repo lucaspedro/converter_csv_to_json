@@ -5,7 +5,7 @@ import json
 
 # Here you can change the CSV file:
 
-file_csv = 'static/data/side_menu_.csv'
+file_csv = 'csv_input.csv'
 
 ####################################################################
 
@@ -49,7 +49,7 @@ with open(file_csv) as csv_file:
         str_json_menu = json_generator_by_csv(data, 0, None, num_lvl0)
         str_final = '{ "menu":['+str_json_menu+'] }'
         #menu_in_json_format = json.loads(str_json_menu)
-        data_file = open("static/data/json_output.json", "w")
+        data_file = open("json_output.json", "w")
         with data_file as f:
             f.write(str_final)
         data_file.close()
