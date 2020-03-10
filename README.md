@@ -60,7 +60,7 @@ To change the CSV file just change its location/name as shown in the following e
 
 # Here you can change the CSV file:
 
-file_csv = 'static/data/side_menu_.csv'
+file_csv = 'input_csv.csv'
 
 ####################################################################
 ```
