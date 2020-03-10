@@ -1,0 +1,17 @@
+nivel,title,icon,children,father
+0,A1,list,"C1,C2,C3",None
+0,A2,list,B2,None
+0,A3,list,"B1,B3",None
+1,C1,pie_chart,None,A1
+1,C2,pie_chart,None,A1
+1,B2,pie_chart,None,A2
+1,C3,list,"D1,D2,D3",A1
+0,A5,list,None,None
+2,D1,view_quilt,None,C3
+1,B3,pie_chart,None,A3
+2,D2,pie_chart,None,C3
+2,D3,view_quilt,E1,C3
+1,B1,pie_chart,None,A3
+4,F1,view_quilt,None,E1
+0,A4,list,None,None
+3,E1,view_quilt,F1,D3
